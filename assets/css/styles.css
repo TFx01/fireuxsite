@@ -21,6 +21,7 @@ html, body, #root {
 #root {
     display: flex;
     font-family: 'Gilroy';
+    overflow:hidden;
 }
 
 * {
@@ -48,6 +49,16 @@ html, body, #root {
     box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
 }
 
+.nav_arrow{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 .left_content {
     text-transform: uppercase;
     padding: 0 40px;
@@ -60,7 +71,7 @@ html, body, #root {
 
 .pipe {
     width: 2px;
-    height: 10%;
+    height: 20%;
     background: white;
 }
 
@@ -131,6 +142,8 @@ html, body, #root {
 .arrow_down img{
     height: 35px;
     cursor: pointer;
+    position: relative;
+    top: 7px;
 }
 
 .text_navigate{
@@ -162,6 +175,7 @@ html, body, #root {
     font-weight: normal;
     font-size: 400%;
     color: white;
+    overflow: hidden;
 }
 
 .btn_about div {
@@ -199,7 +213,6 @@ html, body, #root {
     position: fixed;
     background: black;
     color: white;
-    grid-template-columns: 2fr 2fr 2fr;
 }
 
 /* mediaquery */
@@ -209,16 +222,21 @@ html, body, #root {
     }
 
     .nav_bar_mobile {
+        line-height: 70px;
         display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+
+    .nav_bar_mobile .title {
+        margin: 0;
+        text-align: center;
     }
 
     .logo{
-       padding: 0 0 0 50px;
-
+        padding: 0 0 0 40px;
     }
-
     .logo img{
-        width: 7vw;
+        width: 30px;
     }
 
     .pages {

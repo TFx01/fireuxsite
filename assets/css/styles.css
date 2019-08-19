@@ -221,6 +221,8 @@ html, body, #root {
         display: none;
     }
 
+    /* update */
+
     .nav_bar_mobile {
         line-height: 70px;
         display: grid;

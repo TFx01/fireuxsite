@@ -157,12 +157,32 @@ body,
 .cards {
 	display: flex;
 	flex-direction: column;
-	padding: 20px 20px;
+	padding: 20px 0;
 	width: 90%;
+	margin-bottom: 20px;
 	overflow-y: scroll;
 	/* display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr); */
+}
+
+.cards::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+.cards::-webkit-scrollbar-track {
+	background: white;
+}
+
+/* Handle */
+.cards::-webkit-scrollbar-thumb {
+	background: grey;
+}
+
+/* Handle on hover */
+.cards::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
 
 .cards .card:nth-child(1) {
@@ -416,6 +436,26 @@ body,
 
 .nav_bar_mobile .logo img {
 	position: relative;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: grey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
 
 /* mediaquery */

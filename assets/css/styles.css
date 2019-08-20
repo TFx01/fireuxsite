@@ -138,16 +138,6 @@ body,
 	width: 40px;
 }
 
-.homepage {
-	background-position: center;
-	background-size: cover;
-	background-image: url('../images/bg_home.jpg');
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
 .about {
 	background-image: url('../images/bg_about.png');
 	width: 100%;

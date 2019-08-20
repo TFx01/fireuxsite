@@ -138,8 +138,8 @@ body,
 	width: 40px;
 }
 
-.about {
-	background-image: url('../images/bg_about.png');
+.products {
+	background-image: url('../images/bg_products.png');
 	width: 100%;
 	display: flex;
 	height: auto !important;
@@ -147,7 +147,7 @@ body,
 	position: relative;
 }
 
-.text_about {
+.text_products {
 	font-weight: bold;
 	font-size: 40px;
 	text-align: left;
@@ -212,7 +212,7 @@ body,
 	color: white;
 }
 
-.btn_about {
+.btn_products {
 	position: absolute;
 	border: 1px solid white;
 	bottom: 15px;
@@ -227,7 +227,7 @@ body,
 	overflow: hidden;
 }
 
-.btn_about span {
+.btn_products span {
 	z-index: 2;
 }
 
@@ -240,43 +240,28 @@ body,
 	overflow: hidden;
 }
 
-.btn_about div {
+.btn_products div {
 	position: relative;
 }
 
-.btn_about span {
+.btn_products span {
 	transition: 0.5s;
 }
 
-.btn_about span:nth-child(2) {
+.btn_products span:nth-child(2) {
 	position: relative;
 	margin-left: 100%;
 	transition: 5s;
 }
 
-.btn_about:hover span:nth-child(1) {
+.btn_products:hover span:nth-child(1) {
 	position: relative;
 	margin-left: -200%;
 }
 
-.btn_about:hover span:nth-child(2) {
+.btn_products:hover span:nth-child(2) {
 	position: relative;
 	left: 18%;
-}
-
-.nav_bar_mobile {
-	height: 70px;
-	display: none;
-	overflow: hidden;
-	position: fixed;
-	background: black;
-	z-index: 1;
-	color: white;
-	color: white;
-	text-decoration: none;
-	-webkit-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
-	-moz-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
-	box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
 }
 
 .logo {
@@ -356,65 +341,20 @@ body,
 	color: white;
 }
 
-.btn_about {
-	position: absolute;
-	border: 1px solid white;
-	bottom: 15px;
-	left: 15px;
-	height: 40px;
-	width: 150px;
-	line-height: 40px;
-	text-align: center;
-	font-size: 13px;
-	color: white;
-	cursor: pointer;
-	overflow: hidden;
-}
-
-.btn_about span {
-	z-index: 2;
-}
-
-.text_center {
-	text-align: center;
-	font-weight: normal;
-	font-size: 420%;
-	color: white;
-	overflow: hidden;
-}
-
-.btn_about div {
-	position: relative;
-}
-
-.btn_about span {
-	transition: 0.5s;
-}
-
-.btn_about span:nth-child(2) {
-	position: relative;
-	margin-left: 100%;
-	transition: 5s;
-}
-
-.btn_about:hover span:nth-child(1) {
-	position: relative;
-	margin-left: -200%;
-}
-
-.btn_about:hover span:nth-child(2) {
-	position: relative;
-	left: 18%;
-}
-
 .nav_bar_mobile {
 	height: 70px;
 	display: none;
 	overflow: hidden;
 	position: fixed;
-	background: #24292e;
-	color: white;
+	background: black;
 	line-height: 70px;
+	z-index: 1;
+	color: white;
+	color: white;
+	text-decoration: none;
+	-webkit-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
+	-moz-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
+	box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
 }
 
 .nav_bar_mobile .menu {
@@ -472,7 +412,7 @@ body,
 		text-align: center;
 	}
 
-	.text_about {
+	.text_products {
 		text-align: center;
 		font-size: 25px;
 	}

@@ -140,15 +140,6 @@ body,
 	width: 40px;
 }
 
-.pages {
-	margin-top: 100px;
-	height: 100%;
-}
-
-.page {
-	height: calc(100% - 100px);
-}
-
 .homepage {
 	background-position: center;
 	background-size: cover;
@@ -278,6 +269,9 @@ body,
 	color: white;
 	color: white;
 	text-decoration: none;
+	-webkit-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
+	-moz-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
+	box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
 }
 
 .logo {
@@ -308,7 +302,7 @@ body,
 	height: 100%;
 	width: 100%;
 	background: #000000bf;
-	position: absolute;
+	position: fixed;
 	display: none;
 	overflow: hidden;
 	z-index: 1000;
@@ -405,7 +399,7 @@ body,
 	display: none;
 	overflow: hidden;
 	position: fixed;
-	background: black;
+	background: #24292e;
 	color: white;
 	line-height: 70px;
 }

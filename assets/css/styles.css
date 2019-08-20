@@ -23,7 +23,6 @@ body,
 #root {
 	display: flex;
 	font-family: 'Gilroy';
-	overflow: hidden;
 }
 
 * {
@@ -46,9 +45,9 @@ body,
 	line-height: 100px;
 	overflow: hidden;
 	z-index: 1;
-	-webkit-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
-	-moz-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
-	box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
+	-webkit-box-shadow: 0 7px 6px -6px rgb(27, 27, 27);
+	-moz-box-shadow: 0 7px 6px -6px rgb(27, 27, 27);
+	box-shadow: 0 7px 6px -6px rgb(27, 27, 27);
 }
 
 .nav_arrow {
@@ -168,7 +167,19 @@ body,
 }
 
 .cards {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.cards .card:nth-child(1) {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.cards .card:nth-child(1) {
+	grid-column: 2;
+	grid-row: 2;
 }
 
 .card {
@@ -363,7 +374,7 @@ body,
 
 .text_center {
 	text-align: center;
-	letter-spacing: 5px;
+	letter-spacing: 2px;
 	font-weight: normal;
 	font-size: 400%;
 	color: white;

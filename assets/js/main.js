@@ -56,3 +56,31 @@
 //   if(i === letters.length - 1 ) clearInterval(interval)
 //   i++;
 // }, 300)
+
+const backdrop = document.getElementById('backdrop');
+
+window.addEventListener('resize', e => {
+	const width = window.innerWidth;
+
+	if (width > 786) backdrop.style.display = 'none';
+});
+
+// Menu
+var menuOpen = false;
+
+const mainMenuMobile = document.getElementById('mainMenuMobile')
+	.firstElementChild;
+
+document.getElementById('mainMenuMobile').addEventListener('click', () => {
+	if (menuOpen) {
+		backdrop.style.display = 'none';
+		mainMenuMobile.setAttribute('src', './assets/images/menu_button.png');
+	} else {
+		backdrop.style.display = 'block';
+		mainMenuMobile.setAttribute('src', './assets/images/cancel_button.png');
+	}
+
+	console.log(mainMenuMobile);
+
+	menuOpen = !menuOpen;
+});

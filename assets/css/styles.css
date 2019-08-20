@@ -347,6 +347,7 @@ body,
 	height: 100px;
 	display: flex;
 	align-items: center;
+	box-shadow: 3px 3px 10px #0000003b;
 }
 
 .about .text {
@@ -360,6 +361,7 @@ body,
 	font-size: 40px;
 	padding: 10%;
 	text-align: center;
+	text-shadow: 3px 3px 10px #000000bf;
 }
 
 .arrow_down img {

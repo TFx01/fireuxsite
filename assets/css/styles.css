@@ -45,9 +45,9 @@ body,
   line-height: 100px;
   overflow: hidden;
   z-index: 1;
-  -webkit-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
-  -moz-box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
-  box-shadow: 0 6px 6px -6px rgb(56, 56, 56);
+  -webkit-box-shadow: 0 7px 6px -6px rgb(27, 27, 27);
+  -moz-box-shadow: 0 7px 6px -6px rgb(27, 27, 27);
+  box-shadow: 0 7px 6px -6px rgb(27, 27, 27);
 }
 
 .nav_arrow {
@@ -112,13 +112,14 @@ body,
   position: absolute;
   top: 2px;
   left: 0;
-  width: 100%;
+  width: 0%;
   height: 100%;
-  border-bottom: 0px solid white;
+  border-bottom: 1px solid white;
+  transition: 0.5s;
 }
 
-.button_list .link:hover {
-  border-width: 100%;
+.button_list .link:hover a:after {
+  width: 100%;
 }
 
 .button_list .link a:link,
@@ -166,7 +167,19 @@ body,
 }
 
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cards .card:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cards .card:nth-child(1) {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .card {
@@ -297,7 +310,7 @@ body,
   height: 100%;
   width: 100%;
   background: #000000bf;
-  position: absolute;
+  position: fixed;
   display: none;
   overflow: hidden;
   z-index: 1000;
@@ -358,7 +371,7 @@ body,
 
 .text_center {
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   font-weight: normal;
   font-size: 400%;
   color: white;

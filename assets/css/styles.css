@@ -23,7 +23,6 @@ body,
 #root {
   display: flex;
   font-family: "Gilroy";
-  overflow: hidden;
 }
 
 * {
@@ -137,15 +136,6 @@ body,
 
 .logo img {
   width: 40px;
-}
-
-.pages {
-  margin-top: 100px;
-  height: 100%;
-}
-
-.page {
-  height: calc(100% - 100px);
 }
 
 .homepage {

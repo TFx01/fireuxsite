@@ -84,3 +84,14 @@ document.getElementById('mainMenuMobile').addEventListener('click', () => {
 
 	menuOpen = !menuOpen;
 });
+
+// Scroll
+$(document).ready(function() {
+	$('a[href*="#"]').on('click', function(event) {
+		let hash = this.hash;
+		if (hash) {
+			event.preventDefault();
+			$('html, body').animate({ scrollTop: $(hash).offset().top - 80 }, 10);
+		}
+	});
+});

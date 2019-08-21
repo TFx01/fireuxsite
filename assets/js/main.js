@@ -57,6 +57,12 @@
 //   i++;
 // }, 300)
 
+new universalParallax().init();
+
+new universalParallax().init({
+	speed: 8.0
+});
+
 const backdrop = document.getElementById('backdrop');
 var isMobile = false;
 

@@ -105,6 +105,12 @@ document.getElementById('mainMenuMobile').addEventListener('click', () => {
 	menuOpen = !menuOpen;
 });
 
+$('.link a').click(() => {
+	backdrop.style.display = 'none';
+	mainMenuMobile.setAttribute('src', './assets/images/menu_button.png');
+	menuOpen = !menuOpen;
+});
+
 // Scroll
 $(document).ready(function() {
 	checkIfIsInMobileMode(window.innerWidth);

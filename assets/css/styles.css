@@ -493,6 +493,8 @@ body,
 }
 
 .homepage .background {
+	background-color: #0000005f;
+	background-blend-mode: darken;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;

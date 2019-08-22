@@ -18,6 +18,7 @@ body,
 #root {
 	height: 100%;
 	scroll-behavior: smooth;
+	min-height: 500px;
 }
 
 #root {
@@ -722,5 +723,12 @@ body,
 @media screen and (max-height: 737px) {
 	.about .text {
 		font-size: 20px;
+	}
+}
+
+@media screen and (max-height: 550px) {
+	.products .page_title {
+		font-size: 20px;
+		padding: 10px;
 	}
 }

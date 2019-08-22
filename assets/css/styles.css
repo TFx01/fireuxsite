@@ -165,7 +165,7 @@ body,
 
 .products .content .menu {
 	width: 30rem;
-  	height: 20rem;
+	height: 20rem;
 	background: white;
 	overflow: hidden;
 	top: 40px;
@@ -175,6 +175,7 @@ body,
 }
 
 .products .content .menu .container {
+	scroll-behavior: smooth;
 	overflow-y: scroll;
 	position: relative;
 	width: 100%;
@@ -203,7 +204,7 @@ body,
 
 .products .content .menu .container .product .icon {
 	width: 70px;
-	height: 70px;	
+	height: 70px;
 	border-radius: 50%;
 	border: 2px solid #e2e2e2;
 	box-shadow: 0 0 6px #888;
@@ -226,10 +227,10 @@ body,
 	color: #454647;
 }
 
-.description_agenda{
+.description_agenda {
 	position: relative;
 	bottom: 0;
-	font-size:9px;
+	font-size: 9px;
 	font-weight: normal;
 }
 
@@ -587,12 +588,10 @@ body,
 	position: relative;
 	left: 20px;
 	align-items: center;
-
 }
 
 .nav-bar_mobile .menu img {
 	width: 100%;
-	
 }
 
 .nav_bar_mobile .title {

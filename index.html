@@ -1,201 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- corrigindo git -->
+	<!-- corrigindo git -->
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Document</title>
-	<link rel="stylesheet" href="./assets/css/styles.css" />
-	<link rel="stylesheet" href="./assets/css/universal-parallax.css" />
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/universal-parallax.css" />
+	</head>
 
-<body>
-	<div id="root">
-		<nav class="nav_bar tam-100">
-			<div class="left_content">
-				<div class="pipe"></div>
-				<div class="title">você está na <strong>home</strong></div>
-			</div>
-			<div class="right_content">
-				<ul class="button_list">
-					<li class="link"><a href="#home">home</a></li>
-					<li class="link"><a href="#products">produtos</a></li>
-					<li class="link"><a href="#about">sobre nós</a></li>
-					<li class="link"><a href="#contact">contato</a></li>
-				</ul>
+	<body>
+		<div id="root">
+			<nav class="nav_bar tam-100">
+				<div class="left_content">
+					<div class="pipe"></div>
+					<div class="title">você está na <strong>home</strong></div>
+				</div>
+				<div class="right_content">
+					<ul class="button_list">
+						<li class="link"><a href="#home">home</a></li>
+						<li class="link"><a href="#products">produtos</a></li>
+						<li class="link"><a href="#about">sobre nós</a></li>
+						<li class="link"><a href="#contact">contato</a></li>
+					</ul>
+					<div class="logo">
+						<img src="./assets/images/logo.png" alt="logo" />
+					</div>
+				</div>
+			</nav>
+			<div class="nav_bar_mobile tam-100">
+				<div id="mainMenuMobile" class="menu">
+					<img src="./assets/images/menu_button.png" alt="" />
+				</div>
+				<div class="title">HOME</div>
 				<div class="logo">
 					<img src="./assets/images/logo.png" alt="logo" />
 				</div>
 			</div>
-		</nav>
-		<div class="nav_bar_mobile tam-100">
-			<div id="mainMenuMobile" class="menu">
-				<img src="./assets/images/menu_button.png" alt="" />
-			</div>
-			<div class="title">HOME</div>
-			<div class="logo">
-				<img src="./assets/images/logo.png" alt="logo" />
+			<div class="pages tam-100">
+				<div id="backdrop" class="backdrop page">
+					<ul class="button_list">
+						<li class="link"><a href="#home">home</a></li>
+						<li class="link"><a href="#products">produtos</a></li>
+						<li class="link"><a href="#about">sobre nós</a></li>
+						<li class="link"><a href="#contact">contato</a></li>
+					</ul>
+				</div>
+				<div id="home" class="homepage page ">
+					<div
+						class="background parallax"
+						data-parallax-image="./assets/images/bg_home.jpg"
+					></div>
+					<div class="content">
+						<div class="text_center">
+							<span
+								>OLÁ, <strong>SINTA-SE</strong> A VONTADE <br />PARA NOS
+								<strong>CONHECER!</strong></span
+							>
+						</div>
+						<div class="nav_arrow">
+							<div class="text_navigate">
+								<span>NAVEGAR</span>
+							</div>
+							<div class="arrow_down">
+								<img src="./assets/images/arrow_down.png" />
+							</div>
+						</div>
+					</div>
+					<div class="btn_products">
+						<div>
+							<span>QUEM SOMOS?</span>
+							<span>QUEM SOMOS?</span>
+						</div>
+					</div>
+				</div>
+				<div id="products" class="products page">
+					<div class="text_products page_title">
+						<span>PROJETOS QUE ESTAMOS REALIZANDO</span>
+					</div>
+					<div class="content">
+						<div class="menu" id="menu">
+							<div class="container">
+								<div class="product">
+									<div class="icon">
+										<img src="./assets/images/prod_1_logo.png" alt="" />
+									</div>
+									<div class="name">
+										App Agenda
+										<div class="description_agenda">
+											Descricao sobre a agenda, sério muito simples!
+										</div>
+									</div>
+								</div>
+								<div class="product">
+									<div class="icon">
+										<img src="./assets/images/prod_1_logo.png" alt="" />
+									</div>
+									<div class="name">
+										App Agenda
+										<div class="description_agenda">
+											Descricao sobre a agenda, sério muito simples!
+										</div>
+									</div>
+								</div>
+								<div class="product">
+									<div class="icon">
+										<img src="./assets/images/prod_1_logo.png" alt="" />
+									</div>
+									<div class="name">
+										App Agenda
+										<div class="description_agenda">
+											Descricao sobre a agenda, sério muito simples!
+										</div>
+									</div>
+								</div>
+								<div class="product">
+									<div class="icon">
+										<img src="./assets/images/prod_1_logo.png" alt="" />
+									</div>
+									<div class="name">
+										App Agenda
+										<div class="description_agenda">
+											Descricao sobre a agenda, sério muito simples!
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slides">
+							<div class="arrow">
+								<img src="./assets/images/side_arrow.png" alt="" class="left" />
+							</div>
+							<div class="container">
+								<div class="dots">
+									<div class="dot"></div>
+									<div class="dot"></div>
+									<div class="dot"></div>
+								</div>
+								<div class="slide_box">
+									<div class="slide">
+										<div class="image">
+											<img src="./assets/images/prod_agenda.png" alt="" />
+										</div>
+										<div class="info">
+											<div class="description">
+												Uma simples agenda criada para auxiliar estudantes a
+												manter sua organização em dia
+											</div>
+											<div class="button">
+												<a href="" id="see_more">Disponível na Playstore</a>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="image">
+											<img src="./assets/images/prod_agenda.png" alt="" />
+										</div>
+										<div class="info">
+											<div class="description">
+												sdsdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+											</div>
+											<div class="button">
+												<a href="" id="see_more">Disponível na Playstore</a>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="image">
+											<img src="./assets/images/prod_agenda.png" alt="" />
+										</div>
+										<div class="info">
+											<div class="description">
+												Aplicativo novo pra fazer bagulho bem legalzinho mesmo
+												tipo jogar fortnite com a galerinha do grupo
+											</div>
+											<div class="button">
+												<a href="" id="see_more">Disponível na Playstore</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="arrow">
+								<img
+									src="./assets/images/side_arrow.png"
+									alt=""
+									class="right"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="about" class="about page">
+					<div
+						class="background parallax"
+						data-parallax-image="./assets/images/bg_about.jpg"
+					></div>
+					<div class="content">
+						<div class="page_title">
+							<span>QUEM SOMOS NOS?</span>
+						</div>
+						<div class="text">
+							<span
+								>"Somos pessoas apaixonadas pelo mundo, tanto por sua beleza
+								quanto pela sua complexidade e tentamos todos os dias torná-lo
+								melhor para cada pessoa"</span
+							>
+						</div>
+					</div>
+				</div>
+				<div id="contact" class="contact page">
+					<div class="content">
+						<div class="page_title">
+							<span>CONTATO</span>
+						</div>
+						<div class="text">
+							<span
+								>"Somos pessoas apaixonadas pelo mundo, tanto por sua beleza
+								quanto pela sua complexidade e tentamos todos os dias torná-lo
+								melhor para cada pessoa"</span
+							>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="pages tam-100">
-			<div id="backdrop" class="backdrop page">
-				<ul class="button_list">
-					<li class="link"><a href="#home">home</a></li>
-					<li class="link"><a href="#products">produtos</a></li>
-					<li class="link"><a href="#about">sobre nós</a></li>
-					<li class="link"><a href="#contact">contato</a></li>
-				</ul>
-			</div>
-			<div id="home" class="homepage page ">
-				<div class="background parallax" data-parallax-image="./assets/images/bg_home.jpg"></div>
-				<div class="content">
-					<div class="text_center">
-						<span>OLÁ, <strong>SINTA-SE</strong> A VONTADE <br />PARA NOS
-							<strong>CONHECER!</strong></span>
-					</div>
-					<div class="nav_arrow">
-						<div class="text_navigate">
-							<span>NAVEGAR</span>
-						</div>
-						<div class="arrow_down">
-							<img src="./assets/images/arrow_down.png" />
-						</div>
-					</div>
-				</div>
-				<div class="btn_products">
-					<div>
-						<span>QUEM SOMOS?</span>
-						<span>QUEM SOMOS?</span>
-					</div>
-				</div>
-			</div>
-			<div id="products" class="products page">
-				<div class="text_products page_title">
-					<span>PROJETOS QUE ESTAMOS REALIZANDO</span>
-				</div>
-				<div class="content">
-					<div class="menu" id="menu">
-						<div class="container">
-							<div class="product">
-								<div class="icon">
-									<img src="./assets/images/prod_1_logo.png" alt="" />
-								</div>
-								<div class="name">App Agenda
-									<div class="description_agenda">Descricao sobre a agenda, sério muito simples!</div>
-								</div>
-
-							</div>
-							<div class="product">
-								<div class="icon">
-									<img src="./assets/images/prod_1_logo.png" alt="" />
-								</div>
-								<div class="name">App Agenda
-									<div class="description_agenda">Descricao sobre a agenda, sério muito simples!</div>
-								</div>
-							</div>
-							<div class="product">
-								<div class="icon">
-									<img src="./assets/images/prod_1_logo.png" alt="" />
-								</div>
-								<div class="name">App Agenda
-									<div class="description_agenda">Descricao sobre a agenda, sério muito simples!</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slides">
-						<div class="arrow">
-							<img src="./assets/images/side_arrow.png" alt="" class="left" />
-						</div>
-						<div class="container">
-							<div class="dots">
-								<div class="dot"></div>
-								<div class="dot"></div>
-								<div class="dot"></div>
-							</div>
-							<div class="slide_box">
-								<div class="slide">
-									<div class="image">
-										<img src="./assets/images/prod_agenda.png" alt="" />
-									</div>
-									<div class="info">
-										<div class="description">
-											Uma simples agenda criada para auxiliar estudantes a
-											manter sua organização em dia
-										</div>
-										<div class="button">
-											<a href="" id="see_more">Disponível na Playstore</a>
-										</div>
-									</div>
-								</div>
-								<div class="slide">
-									<div class="image">
-										<img src="./assets/images/prod_agenda.png" alt="" />
-									</div>
-									<div class="info">
-										<div class="description">
-											sdsdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-										</div>
-										<div class="button">
-											<a href="" id="see_more">Disponível na Playstore</a>
-										</div>
-									</div>
-								</div>
-								<div class="slide">
-									<div class="image">
-										<img src="./assets/images/prod_agenda.png" alt="" />
-									</div>
-									<div class="info">
-										<div class="description">
-											Aplicativo novo pra fazer bagulho bem legalzinho mesmo
-											tipo jogar fortnite com a galerinha do grupo
-										</div>
-										<div class="button">
-											<a href="" id="see_more">Disponível na Playstore</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="arrow">
-							<img src="./assets/images/side_arrow.png" alt="" class="right" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="about" class="about page">
-				<div class="background parallax" data-parallax-image="./assets/images/bg_about.jpg"></div>
-				<div class="content">
-					<div class="page_title">
-						<span>QUEM SOMOS NOS?</span>
-					</div>
-					<div class="text">
-						<span>"Somos pessoas apaixonadas pelo mundo, tanto por sua beleza
-							quanto pela sua complexidade e tentamos todos os dias torná-lo
-							melhor para cada pessoa"</span>
-					</div>
-				</div>
-			</div>
-			<div id="contact" class="contact page">
-				<div class="content">
-					<div class="page_title">
-						<span>CONTATO</span>
-					</div>
-					<div class="text">
-						<span>"Somos pessoas apaixonadas pelo mundo, tanto por sua beleza
-							quanto pela sua complexidade e tentamos todos os dias torná-lo
-							melhor para cada pessoa"</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="./assets/js/jquery.js"></script>
-	<script src="./assets/js/universal-parallax.js"></script>
-	<script src="./assets/js/main.js"></script>
-	<script src="./assets/js/slide_show.js"></script>
-</body>
-
+		<script src="./assets/js/jquery.js"></script>
+		<script src="./assets/js/universal-parallax.js"></script>
+		<script src="./assets/js/main.js"></script>
+		<script src="./assets/js/slide_show.js"></script>
+	</body>
 </html>

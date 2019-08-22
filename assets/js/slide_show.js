@@ -37,8 +37,10 @@ $('.arrow').click(e => {
 	$('.menu .container')
 		.children()
 		.map((i, slide) => {
-			if (i === currentSlide) slide.children[1].style.color = 'orange';
-			else slide.children[1].style.color = 'black';
+			if (i === currentSlide) {
+				$('.menu .container').scrollTop(slide.offsetTop);
+				slide.children[1].style.color = '#ff4800';
+			} else slide.children[1].style.color = 'black';
 		});
 
 	dots.map((i, dot) => {

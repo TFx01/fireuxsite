@@ -18,7 +18,7 @@ body,
 #root {
 	height: 100%;
 	scroll-behavior: smooth;
-	min-height: 500px;
+	min-height: 520px;
 }
 
 #root {
@@ -254,8 +254,8 @@ body,
 }
 
 .products .content .slides .arrow img {
-	width: 34px;
-	height: 34px;
+	width: 18px;
+	height: 18px;
 	position: relative;
 	top: 35%;
 	transition: 0.2s;
@@ -315,7 +315,9 @@ body,
 }
 
 .products .content .slides .slide .image img {
-	max-height: 520px;
+	max-height: 130%;
+	max-width: 100%;
+	height: auto;
 }
 
 .products .content .slides .slide .info {
@@ -555,6 +557,10 @@ body,
 	padding: 10%;
 	text-align: center;
 	text-shadow: 3px 3px 10px #000000bf;
+}
+
+.contact{
+	max-height: 60%;
 }
 
 .arrow_down img {

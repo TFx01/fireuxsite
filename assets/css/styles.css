@@ -175,6 +175,16 @@ body,
 	border-radius: 0 5px 5px 0;
 }
 
+.google_play_icon{
+	position: relative;
+	left:20%;
+}
+
+.google_play_icon img{
+	height: 18px;
+	width: 18px;
+}
+
 .products .content .menu .container {
 	scroll-behavior: smooth;
 	overflow-y: scroll;

@@ -57,6 +57,7 @@ body,
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
 }
 
 .left_content {
@@ -178,11 +179,13 @@ body,
 .google_play_icon {
   position: relative;
   left: 20%;
+  display: flex; 
 }
 
 .google_play_icon img {
-  height: 18px;
-  width: 18px;
+  height: 17px;
+  width: 17px;
+
 }
 
 .products .content .menu .container {

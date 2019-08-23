@@ -38,7 +38,7 @@ $('.arrow').click(e => {
 
 	$('.menu .container')
 		.children()
-		.map(product => {
+		.map((i, product) => {
 			// É tipo um FOR por todos os produtos do menu, o "product" recebe a div do produto tipo na primeira iteração pega o primeiro produto, na segunda o segundo e assim vai
 			if (i === currentSlide) {
 				// Verifica se o item do menu "produto", tem o mesmo indice do slide selecionado para fazer a troca de cor para laranjado
@@ -48,7 +48,7 @@ $('.arrow').click(e => {
 		});
 
 	// Se ler o de cima acho que voce entende esse tbm
-	dots.map(dot => {
+	dots.map((i, dot) => {
 		if (i === currentSlide) {
 			dot.style.background = '#ff4800';
 		} else {

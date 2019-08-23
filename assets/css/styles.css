@@ -543,7 +543,7 @@ body,
   align-items: center;
   color: white;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 37px;
   padding: 10%;
   text-align: center;
   text-shadow: 3px 3px 10px #000000bf;
@@ -551,6 +551,24 @@ body,
 
 .contact {
   max-height: 60%;
+}
+
+.contact .text{
+  padding-top: 1%;
+  font-size: 70px;
+  font-weight: bold;
+  position: relative;
+  left:31px;
+}
+
+.contact .sub_text{
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.contact .sub_text a{
+  color: inherit;
+  text-decoration: none; 
 }
 
 .arrow_down img {

@@ -126,3 +126,38 @@ $(document).ready(function() {
 		}
 	});
 });
+
+$(document).scroll(function() {
+	const currentScrollPos = document.documentElement.scrollTop;
+
+	var pageNameToShow;
+
+	$('.page').map((i, page) => {
+		if (
+			currentScrollPos < $(page).offset().top + 10 &&
+			currentScrollPos > $(page).offset().top - 300
+		) {
+			var pageName = $('.nav_bar .title').text();
+
+			switch ($(page).attr('id')) {
+				case 'home':
+					pageNameToShow = 'home';
+					break;
+				case 'products':
+					pageNameToShow = 'produtos';
+					break;
+				case 'about':
+					pageNameToShow = 'sobre';
+					break;
+				case 'contact':
+					pageNameToShow = 'contato';
+					break;
+				default:
+					pageNameToShow = pageName;
+			}
+		}
+	});
+
+	$('.nav_bar .title').text(pageNameToShow);
+	$('.nav_bar_mobile .title').text(pageNameToShow);
+});

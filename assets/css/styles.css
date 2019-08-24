@@ -617,7 +617,8 @@ body,
 	text-align: center;
 	font-weight: bold;
 	font-size: 15px;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
 }
 
 .nav_bar_mobile .logo {
@@ -770,6 +771,10 @@ body,
 
 	.products .content .slides .container .slide .info .button {
 		padding: 0;
+	}
+
+	.contact .content .text span {
+		font-size: 30px;
 	}
 }
 

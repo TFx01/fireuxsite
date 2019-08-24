@@ -135,7 +135,7 @@ $(document).scroll(function() {
 	$('.page').map((i, page) => {
 		if (
 			currentScrollPos < $(page).offset().top + 10 &&
-			currentScrollPos > $(page).offset().top - 300
+			currentScrollPos > $(page).offset().top - ($(window).height() * 40) / 100
 		) {
 			var pageName = $('.nav_bar .title').text();
 

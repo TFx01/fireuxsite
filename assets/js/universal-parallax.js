@@ -67,7 +67,7 @@ var calculateHeight = function calculateHeight(parallax, speed) {
 				: container.height + (elemOffsetTop - elemOffsetTop / speed) * 2;
 
 		parallax[i].style.height = 100 + '%';
-		parallax[i].style.backgroundSize = $(window).weigth() + 'px ' + 100 + '%';
+		parallax[i].style.backgroundSize = $(window).width() + 'px ' + 100 + '%';
 		positionParallax(container, speed, parallax, i);
 	}
 };

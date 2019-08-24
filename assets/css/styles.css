@@ -205,7 +205,7 @@ body,
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
+  padding: 12px;
 }
 
 .products .content .menu .container .product:first-of-type .name {
@@ -550,20 +550,22 @@ body,
 }
 
 .contact {
-  max-height: 60%;
+  max-height: 65%;
 }
 
 .contact .text{
-  padding-top: 1%;
   font-size: 70px;
   font-weight: bold;
   position: relative;
-  left:31px;
+  padding: 3px 39px;
+  
 }
 
 .contact .sub_text{
   font-size: 17px;
+  left:3px;
   font-weight: normal;
+  position: relative;
 }
 
 .contact .sub_text a{

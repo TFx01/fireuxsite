@@ -115,7 +115,6 @@ $('.link a').click(() => {
 $(document).ready(function() {
 	checkIfIsInMobileMode(window.innerWidth);
 	$('a[href*="#"]').on('click', function(event) {
-		console.log(isMobile);
 		let hash = this.hash;
 		if (hash) {
 			event.preventDefault();

@@ -5,10 +5,25 @@ const dots = $('.dots').children(); // Pega a div dos dots
 
 $('.arrow').click(e => {
 	var arrowDir;
-	arrowDir = e.target.children[0].classList.contains('left') ? 'left' : 'right'; // Verifico qual das arrows o usuario clicou
+	const arrowImg = e.target.children[0];
 
+	if (arrowImg) {
+		arrowDir = arrowImg.classList.contains('left') ? 'left' : 'right'; // Verifico qual das arrows o usuario clicou
+
+		slideImage(arrowDir);
+	}
+});
+
+$('.arrow img').click(e => {
+	var arrowDir;
+	arrowDir = e.target.classList.contains('left') ? 'left' : 'right'; // Verifico qual das arrows o usuario clicou
+
+	slideImage(arrowDir);
+});
+
+function slideImage(direction) {
 	var previousSlide = slides[currentSlide];
-	if (arrowDir == 'left') {
+	if (direction == 'left') {
 		currentSlide = currentSlide > 0 ? currentSlide - 1 : slidesCount - 1; // Se clicou na da esquerda vai pro slide de cima, se o slide atual for o indice 0 vai pro ultimo slide da lista
 	} else {
 		currentSlide = currentSlide < slidesCount - 1 ? currentSlide + 1 : 0; // Se clicou na da direita vai pro slide de baixo, se o slide atual for o ultimo da lista vai pro primeiro slide da lista
@@ -55,4 +70,4 @@ $('.arrow').click(e => {
 			dot.style.background = 'white';
 		}
 	});
-});
+}

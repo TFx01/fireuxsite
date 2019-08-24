@@ -255,7 +255,6 @@ body,
 	display: grid;
 	grid-template-columns: 1fr 10fr 1fr;
 	user-select: none;
-	height: 100%;
 }
 
 .products .content .slides .arrow {
@@ -698,20 +697,57 @@ body,
 		font-size: 30px;
 	}
 
+	.products {
+		height: auto !important;
+	}
+
 	.products .content {
 		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 100%;
 	}
 
 	.products .content .menu {
-		display: none;
+		height: 90%;
+		width: 98%;
+		grid-row: 2;
+	}
+
+	.products .content .menu .container {
+		overflow-x: hidden;
+		display: block;
+	}
+
+	.products .content .menu .container .product {
+		padding-left: 10px;
+		padding-right: 0;
+		width: 80%;
+	}
+
+	.products .content .menu .container .product .icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.products .content .menu .container .product .icon img {
+		padding-right: 0;
+		width: 80px;
+		height: 80px;
+	}
+
+	.products .content .slides {
+		grid-template-columns: 1fr 4fr 1fr;
+		width: 100%;
+		height: auto;
 	}
 
 	.products .content .slides .container .dots {
 		display: flex;
 	}
 
-	.products .content .slides .arrow img {
-		top: 20%;
+	.products .content .slides .container .slide {
+		height: auto;
 	}
 
 	.products .content .slides .container .slide .image {
@@ -724,7 +760,6 @@ body,
 
 	.products .content .slides .container .slide .info {
 		justify-content: end;
-		height: 40%;
 	}
 
 	.products .content .slides .container .slide .info .description {

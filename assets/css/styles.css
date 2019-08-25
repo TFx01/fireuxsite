@@ -330,7 +330,7 @@ body,
 }
 
 .products .content .slides .slide .image img {
-	max-height: 130%;
+	max-height: 115%;
 	max-width: 100%;
 	height: auto;
 }
